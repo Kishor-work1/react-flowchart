@@ -54,7 +54,13 @@ const Sidebar: React.FC<SidebarProps> = ({ selectedNode, onNodeUpdate, onAddNode
                 onChange={handleTextChange}
                 onKeyDown={handleKeyDown}
                 onBlur={handleTextSave}
-                className="w-full p-3 border border-gray-300 rounded-lg resize-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="
+                  w-full p-3 border border-gray-300 rounded-lg resize-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                  text-black
+                  dark:text-white
+                  bg-white
+                  dark:bg-gray-800
+                "
                 rows={4}
                 placeholder="Enter your message here..."
               />
